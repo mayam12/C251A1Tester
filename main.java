@@ -144,7 +144,7 @@ public class main {
      */
     public void insertProbeTest1() {
         Open_Addressing p = new Open_Addressing(10, 0, -1);
-        int[] keyArray = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22};
+        int[] keyArray = {1,2,3,4,5,6,7,8,9,10};
         int jumps = p.insertKeyArray(keyArray);
         if (jumps == 0)
         {
