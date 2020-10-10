@@ -143,17 +143,21 @@ public class main {
         Open_Addressing p = new Open_Addressing(3, 0, -1);
         int[] keyArray = { 1, 2, 2 };
         int jumps = p.insertKeyArray(keyArray);
-        System.out.println(jumps);
         assert jumps == 1;
-        if (jumps == 1) {
-            System.out.println("Insert Probe Test 2 Passed");
-        }
+        System.out.println("Insert Probe Test 2 Passed");
+
     }
 
     /**
      * Too many probes in the table to add any.
      */
     public void insertProbeTest3() {
+        Open_Addressing p = new Open_Addressing(2, 0, -1);
+        int[] keyArray = { 1, 2, 3 };
+        p.insertKeyArray(keyArray);
+        int jumps = p.insertKey(5);
+        assert jumps < 0;
+        System.out.println("Insert Probe Test 3 Passed");
 
     }
 
