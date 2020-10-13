@@ -141,10 +141,15 @@ public class main {
      */
     public void insertProbeTest2() {
         Open_Addressing p = new Open_Addressing(3, 0, -1);
-        int[] keyArray = { 1, 2, 2 };
+        int[] keyArray = { 2, 2 };
         int jumps = p.insertKeyArray(keyArray);
-        assert jumps == 1;
+        if  (jumps== 1){
         System.out.println("Insert Probe Test 2 Passed");
+        }
+        else
+        {
+        System.out.println("Insert Probe Test 2 Failed");
+        }
 
     }
 
