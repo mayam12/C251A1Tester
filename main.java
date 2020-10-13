@@ -134,6 +134,11 @@ public class main {
         if (jumps == 0) {
             System.out.println("Insert Probe Test 1 Passed");
         }
+        else
+        {
+            System.out.println("Insert Probe Test 1 Failed");
+
+        }
     }
 
     /**
