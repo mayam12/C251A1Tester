@@ -156,9 +156,13 @@ public class main {
         int[] keyArray = { 1, 2, 3 };
         p.insertKeyArray(keyArray);
         int jumps = p.insertKey(5);
-        assert jumps < 0;
-        System.out.println("Insert Probe Test 3 Passed");
-
+        if (jumps == 2){
+            System.out.println("Insert Probe Test 3 Passed");
+        }
+        else
+        {
+            System.out.println("Insert Probe Test 3 Failed");
+        }
     }
 
     /**
