@@ -162,14 +162,14 @@ public class main {
     }
 
     /**
-     * insert with i = 0
+     * Remove with no jumps
      */
     public void removeProbeTest1() {
 
     }
 
     /**
-     * insert with m>i > 0
+     * Remove with some jumps
      */
 
     public void removeProbeTest2() {
@@ -177,7 +177,7 @@ public class main {
     }
 
     /**
-     * Remove value that is not there at all
+     * Remove when the key that we are trying to find is not in the table
      */
     public void removeProbeTest3() {
 
