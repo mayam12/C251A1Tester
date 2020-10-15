@@ -109,21 +109,6 @@ public class main {
 
         }
     }
-
-    /**
-     * Check if probing works with m =< i
-     */
-    public void ProbeTest3() {
-        Open_Addressing p = new Open_Addressing(10, 0, -1);
-        int hash2 = p.probe(1, 33);
-        if (hash2 == -1) {
-            System.out.println("Probe Test 3 Passed");
-        } else {
-            System.out.println("Probe Test 3 Failed");
-
-        }
-    }
-
     /**
      * insert with no conflicting probes
      */
